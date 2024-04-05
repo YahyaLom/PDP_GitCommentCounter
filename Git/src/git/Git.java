@@ -18,6 +18,9 @@ public class Git
         // Klonlanan dizinin referansını al ve eğer varsa işlem yap
         if (clonedDirectory != null) {
             System.out.println("Klonlanan repository'nin dizini: " + clonedDirectory.getAbsolutePath());
+            System.out.println("Amacım sizin pc nizde nereye klonlandığını göstermek, hata çıkmaması için "
+            		+ "kendi adım ve random bir sayı ile klasör oluşturup içine klonluyorum.");
+            System.out.println("-----------------------------------Yahya Haliloğlu------------------------------");
             // Burada klonlanan dizine ilişkin başka işlemler yapabilirsiniz
         } else {
             System.err.println("Git deposu klonlanırken bir hata oluştu.");
