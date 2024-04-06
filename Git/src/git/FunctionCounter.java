@@ -18,6 +18,10 @@ public class FunctionCounter {
         // Dosya adı, tanımlı fonksiyon sayısı, normal yorum sayısı, ve dökümantasyon yorum sayısını yazdır
         for (String fileName : fileCounts.keySet()) {
             Integer[] counts = fileCounts.get(fileName);
+            if(counts[0]==0)
+			{
+				continue;
+			}
             totalLOC += counts[3]; // Her dosya için hesaplanan LOC sayısını topla
             System.out.println("Sınıf: " + fileName );
             System.out.println("Javadoc Satır Sayısı : "+counts[2]);
@@ -81,9 +85,12 @@ public class FunctionCounter {
                 line = line.trim();
                 
                 // Sadece metod tanımlarını dikkate al (public, private veya protected ile başlayan)
-                if (line.matches("(public|private|protected)\\s+.*\\(.*\\)\\s*\\{?") && !line.startsWith("public class")) {
+                if(line.matches("(public|private|protected)\\s+.*\\(.*\\)\\s*\\{?")&&!line.startsWith("public class")||line.startsWith("public static")){
                     functionCount++;
                 }
+                /*if (line.matches("(public|private|protected)\\s+.*\\(.*\\)\\s*\\{?")) {
+                    functionCount++;
+                }*/
             }
         } catch (IOException e) {
             System.err.println("Dosya okunurken bir hata oluştu: " + e.getMessage());
