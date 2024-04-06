@@ -1,3 +1,12 @@
+/**
+*
+* @author Yahya Haliloğlu yahya.haliloglu@ogr.sakarya.edu.tr
+* @since  ilk odev adımı -> 15.03.2024, Son revize-> 04.07.2024
+* <p>
+* bütün sayma işlemleri burada yapılıyor, string olarak sayıma hazır klasörün adresi alınıyor. 
+* her sayma için başka bir fonksiyon tanımlanış yardımcı sınıf
+* </p>
+*/
 package git;
 //satır 42 de kaldık 
 import java.io.BufferedReader;

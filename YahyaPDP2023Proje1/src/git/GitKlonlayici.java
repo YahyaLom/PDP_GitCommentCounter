@@ -1,3 +1,11 @@
+/**
+*
+* @author Yahya Haliloğlu yahya.haliloglu@ogr.sakarya.edu.tr
+* @since  ilk odev adımı -> 15.03.2024, Son revize-> 04.07.2024
+* <p>
+* Klonlama işlemi gerçeklşiyor burada, oluşan klına dersi maine dönüyor
+* </p>
+*/
 package git;
 import java.io.File;
 import java.util.Random;
