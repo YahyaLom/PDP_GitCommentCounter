@@ -25,10 +25,12 @@ public class Git
         } else {
             System.err.println("Git deposu klonlanırken bir hata oluştu.");
         }
+        CleanFolder.cleanFolder(klonlanmisKlasor);
         FunctionCounter.countAndPrintFunctions(klonlanmisKlasor);
-
 		cin.close();
 
 	}
+	
+	
 
 }
